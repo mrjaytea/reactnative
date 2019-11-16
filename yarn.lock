@@ -2074,6 +2074,13 @@ expo-permissions@~7.0.0:
   resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-7.0.0.tgz#f4135c3cf8e49c673a9a714459a1eb2b40fe2092"
   integrity sha512-C+qyVz+pdZO4YpVR2HSC3gsBZg0Qb8brCFgzmDmWcAtgrOiHClaLPdhI2XtQuGh8ubXcKPUGZp++UCEGiG0Jxg==
 
+expo-sensors@~7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-7.0.0.tgz#b917fc167151edfaf9a9561a262691fc4fc8ed07"
+  integrity sha512-NBPQ8+E8w0DazYktQcho213SKwerXcBVsmbxsgtaSisGYuIi4fdJo7ZcSRI/SmYXjaHlTc4uTPFvQWRwHGKRuQ==
+  dependencies:
+    invariant "^2.2.4"
+
 expo-sqlite@~7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/expo-sqlite/-/expo-sqlite-7.0.0.tgz#f52585b342278b4034c06caac8384edb2531afa4"
@@ -4382,6 +4389,11 @@ react-native-screens@1.0.0-alpha.23:
   integrity sha512-tOxHGQUN83MTmQB4ghoQkibqOdGiX4JQEmeyEv96MKWO/x8T2PJv84ECUos9hD3blPRQwVwSpAid1PPPhrVEaw==
   dependencies:
     debounce "^1.2.0"
+
+react-native-sound-recorder@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-native-sound-recorder/-/react-native-sound-recorder-1.3.3.tgz#f325385c626a75a59242c14d4b4f80de91816840"
+  integrity sha512-bXxgJC6sdAyeQ7Zv2WWSz3nVcOfLhqsGXs9ozKV5aJT6C1k2Vw6sQf/Lp8+Su0xxrX+r29B0uPteSOx1QZzVnA==
 
 react-native-status-bar-height@^2.2.0:
   version "2.4.0"

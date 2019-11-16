@@ -4,7 +4,7 @@ import AboutMe from './AboutMeComponent';
 import Qualifications from './QualificationsComponent';
 import Skills from './SkillsComponent';
 import Skill from './SkillComponent';
-import Tuner from './TunerComponent';
+import Sensors from './SensorsComponent';
 
 import { View, Image, Stylesheet, Platform, ScrollView, Text } from 'react-native';
 import { createDrawerNavigator, createStackNavigator, DrawerItems, SafeAreaView } from 'react-navigation';
@@ -119,9 +119,9 @@ const SkillsNavigator = createStackNavigator(
     }
 );
 
-const TunerNavigator = createStackNavigator(
+const SensorsNavigator = createStackNavigator(
     {
-        Tuner: { screen: Tuner }
+        Sensors: { screen: Sensors }
     },
     {
         navigationOptions: ({navigation}) => ({
@@ -142,8 +142,10 @@ const CustomDrawerContentComponent = (props) => (
     <ScrollView>
         <SafeAreaView forceInset={{ top:'always', horizontal: 'never'}}>
             <View>
-                <View style= {{flex: 2}}>
-                    <Text>
+                <View style={{alignItems: 'center'}}>
+                    <Image source={require('../assets/banner.png')} style={{width: 175, height: 175}} resizeMode={'contain'}/>
+                    <Text style={{fontWeight: 'bold', fontSize: 20, textShadowColor: 'white', 
+                    textShadowOffset:{width: 1, height: 1}}}>
                         Terry's React Native App
                     </Text>
                 </View>
@@ -203,15 +205,15 @@ const MainNavigator = createDrawerNavigator({
             )
         }
     },
-    Tuner: {
-        screen: TunerNavigator,
+    Sensors: {
+        screen: SensorsNavigator,
         navigationOptions: {
-            title: "Tuner",
+            title: "Sensors",
             // The name
-            drawerLabel: "Tuner",
+            drawerLabel: "Sensors",
             // Include the icon, with a function
             drawerIcon: ({ tintColor} ) => (
-                <Icon name='music' type='font-awesome' size={24} color={tintColor} />
+                <Icon name='thermometer-three-quarters' type='font-awesome' size={24} color={tintColor} />
             )
         }
     }
